@@ -169,6 +169,8 @@ body {
     color: var(--primary)
 }
 
+/* Hero section */
+
 .hero {
     height: 90vh;
     position: relative;
@@ -251,6 +253,8 @@ body {
     color: var(--dark);
 }
 
+/* Highlight Section */
+
 .highlights {
     padding: 100px 10%;
     background: var(--light-bg);
@@ -310,6 +314,8 @@ body {
     color: var(--dark);
 }
 
+/* Call to Action Section */
+
 .cta {
     background: var(--dark);
     padding: 80px 10%;
@@ -335,4 +341,117 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: var(--transition);
+}
+
+/* footer section */
+
+.main-footer {
+    background-color: var(--dark);
+    color: #94a3b8;
+    padding: 80px 10% 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.brand-col .logo1 {
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.brand-col .logo-text1 {
+    color: var(--white);
+}
+
+.brand-col p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+    color: var(--primary);
+    padding-left: 5px;
+}
+
+.social-links a {
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    align-items: center;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+    .footer-col {
+        flex: 1 1 40%
+    }
+}
+
+@media (max-width: 600px) {
+    .main-footer {
+        padding: 60px 20px 20px;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .social-links {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
