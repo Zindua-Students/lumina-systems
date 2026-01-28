@@ -3,7 +3,7 @@
     --dark: #0f172a;
     --white: #ffffff;
     --text: #334155;
-    --light-bg: #f8fafc
+    --light-bg: #f8fafc;
     --transition: all 0.3s ease-in-out;
 }
 
@@ -14,10 +14,10 @@
 }
 body {
     font-family: "Roboto Condensed", sans-serif;
-    background: var(--light);
+    background: var(--light-bg);
     color: var(--text);
     line-height: 1.6;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -253,5 +253,16 @@ body {
 
 .highlights {
     padding: 100px 10%;
-    
+    background: var(--light-bg);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
