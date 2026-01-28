@@ -254,6 +254,8 @@ body {
 .highlights {
     padding: 100px 10%;
     background: var(--light-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .section-header {
@@ -262,7 +264,48 @@ body {
 
 }
 
+.section-header h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+.line {
+    width: 60x;
+    height: 4px;
+    background: var(--primary);
+    margin: 15px auto;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-wrapper img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    color: var(--dark);
 }
