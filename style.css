@@ -250,3 +250,8 @@ body {
     background:  white;
     color: var(--dark);
 }
+
+.highlights {
+    padding: 100px 10%;
+    
+}
