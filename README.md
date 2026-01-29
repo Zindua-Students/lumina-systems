@@ -161,7 +161,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Email: hello@luminasystems.com
 - Phone: +254 700 000 000
 - Location: 123 Tech Plaza, Westlands, Nairobi, Kenya
-- Website: [lumina-systems.com](https://lumina-systems.com)
+- Website: [lumina-systems.com](https://lumina-systems.vercel.app/)
 
 ## Contributing
 
