@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina Systems | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0bf773c143.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <header>
@@ -26,6 +28,281 @@
             </ul>
         </div>
     </nav>
-   </header> 
+   </header>
+
+   <main>
+      <!-- Page Header -->
+      <section class="page-header">
+         <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Showcasing our latest projects and success stories</p>
+         </div>
+      </section>
+
+      <!-- Portfolio Intro -->
+      <section class="portfolio-intro">
+         <div class="container">
+            <p>We've partnered with leading brands and innovative startups to deliver transformative digital solutions. Our portfolio demonstrates our expertise across cloud infrastructure, web development, and user experience design.</p>
+         </div>
+      </section>
+
+      <!-- Filter Section -->
+      <section class="filter-section">
+         <div class="container">
+            <div class="filter-buttons">
+               <button class="filter-btn active" data-filter="all">All Projects</button>
+               <button class="filter-btn" data-filter="cloud">Cloud</button>
+               <button class="filter-btn" data-filter="web">Web Dev</button>
+               <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+         </div>
+      </section>
+
+      <!-- Portfolio Grid -->
+      <section class="portfolio-grid-section">
+         <div class="container">
+            <div class="portfolio-grid">
+               <!-- Project 1 -->
+               <div class="portfolio-card" data-category="cloud">
+                  <div class="portfolio-image">
+                     <img src="assets/cloud.avif" alt="FinTech Cloud Migration">
+                     <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                           <h4>View Case Study</h4>
+                           <p>Cloud Infrastructure</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio-info">
+                     <h3>FinTech Cloud Migration</h3>
+                     <p class="category-badge cloud">Cloud Architecting</p>
+                     <p>Migrated legacy banking infrastructure to AWS, improving performance by 300% and reducing costs by 40%.</p>
+                     <div class="tech-stack">
+                        <span>AWS</span>
+                        <span>Kubernetes</span>
+                        <span>Docker</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 2 -->
+               <div class="portfolio-card" data-category="web">
+                  <div class="portfolio-image">
+                     <img src="assets/web.avif" alt="E-Commerce Platform">
+                     <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                           <h4>View Case Study</h4>
+                           <p>Web Development</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio-info">
+                     <h3>E-Commerce Platform</h3>
+                     <p class="category-badge web">Web Engineering</p>
+                     <p>Built a scalable e-commerce platform handling 100K+ daily users with real-time inventory and payment processing.</p>
+                     <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 3 -->
+               <div class="portfolio-card" data-category="design">
+                  <div class="portfolio-image">
+                     <img src="assets/ui-ux.avif" alt="SaaS Product Redesign">
+                     <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                           <h4>View Case Study</h4>
+                           <p>UI/UX Design</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio-info">
+                     <h3>SaaS Product Redesign</h3>
+                     <p class="category-badge design">UI/UX Strategy</p>
+                     <p>Redesigned user interface increasing engagement by 65% and reducing support tickets by 35% through improved UX.</p>
+                     <div class="tech-stack">
+                        <span>Figma</span>
+                        <span>User Research</span>
+                        <span>Design Systems</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 4 -->
+               <div class="portfolio-card" data-category="cloud">
+                  <div class="portfolio-image">
+                     <img src="assets/hero.avif" alt="Multi-Cloud Strategy">
+                     <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                           <h4>View Case Study</h4>
+                           <p>Cloud Infrastructure</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio-info">
+                     <h3>Multi-Cloud Strategy</h3>
+                     <p class="category-badge cloud">Cloud Architecting</p>
+                     <p>Implemented multi-cloud architecture across AWS and Azure, achieving 99.99% uptime and disaster recovery.</p>
+                     <div class="tech-stack">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>Terraform</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 5 -->
+               <div class="portfolio-card" data-category="web">
+                  <div class="portfolio-image">
+                     <img src="assets/web.avif" alt="Real-Time Analytics Dashboard">
+                     <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                           <h4>View Case Study</h4>
+                           <p>Web Development</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio-info">
+                     <h3>Real-Time Analytics Dashboard</h3>
+                     <p class="category-badge web">Web Engineering</p>
+                     <p>Created real-time data visualization dashboard processing 1M+ events daily with sub-second latency.</p>
+                     <div class="tech-stack">
+                        <span>Vue.js</span>
+                        <span>WebSocket</span>
+                        <span>Apache Kafka</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 6 -->
+               <div class="portfolio-card" data-category="design">
+                  <div class="portfolio-image">
+                     <img src="assets/ui-ux.avif" alt="Mobile App Design">
+                     <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                           <h4>View Case Study</h4>
+                           <p>UI/UX Design</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio-info">
+                     <h3>Mobile App Design System</h3>
+                     <p class="category-badge design">UI/UX Strategy</p>
+                     <p>Developed comprehensive design system enabling 5x faster development and maintaining brand consistency across platforms.</p>
+                     <div class="tech-stack">
+                        <span>Figma</span>
+                        <span>React Native</span>
+                        <span>Accessibility</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="portfolio-stats">
+         <div class="container">
+            <div class="stats-grid">
+               <div class="stat">
+                  <h3>25+</h3>
+                  <p>Projects Completed</p>
+               </div>
+               <div class="stat">
+                  <h3>50M+</h3>
+                  <p>Users Impacted</p>
+               </div>
+               <div class="stat">
+                  <h3>200+</h3>
+                  <p>Enterprise Clients</p>
+               </div>
+               <div class="stat">
+                  <h3>95%</h3>
+                  <p>Client Retention</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+         <h2>Ready to see what we can do for you?</h2>
+         <p>Let's discuss your project and create something amazing together.</p>
+         <a href="contact.html" class="btn-white">Start Your Project</a>
+      </section>
+   </main>
+
+   <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <a href="index.html" class="logo1">
+                <img src="assets/Lumina.png" alt="Lumina Systems Logo" class="logo-img">
+                <span class="logo-text1">Lumina <span>Systems</span></span>
+            </a>
+            <p>Providing high-perfomance digital infrastructure and human-centric designs since 2020</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i> X</a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+                </div>
+        </div>
+        <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+               <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Get Started</a></li>
+            </ul> 
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Our Expertise</h4>
+            <ul>
+                <li><a href="#">Cloud Architecting</a></li>
+                <li><a href="#">UI/UI Strategy</a></li>
+                <li><a href="#">Web Engineering</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <p>123 Tech Plaza, westlands, Nairobi, Kenya</p>
+            <p>hello@luminasystems.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Lumina Systems. All rights reserved.</p>
+    </div>
+   </footer>
+
+   <script>
+      // Portfolio Filter
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+      filterBtns.forEach(btn => {
+         btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            portfolioCards.forEach(card => {
+               if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                  card.style.display = 'block';
+                  setTimeout(() => card.classList.add('show'), 10);
+               } else {
+                  card.classList.remove('show');
+                  setTimeout(() => card.style.display = 'none', 300);
+               }
+            });
+         });
+      });
+   </script>
 </body>
 </html>
